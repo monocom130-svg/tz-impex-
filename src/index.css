@@ -1,13 +1,34 @@
 @import "tailwindcss";
 
 :root {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --primary: #4F46E5;
+  --secondary: #7C3AED;
 }
 
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  background-color: #F8FAFC;
+  /* Slate-50 */
+  color: #0F172A;
+  /* Slate-900 */
+}
+
+/* Premium Typography Utility */
+.heading-premium {
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+/* Glassmorphism Effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /* Custom scrollbar for premium feel */
